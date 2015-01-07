@@ -1,9 +1,11 @@
 " Vim settings, rather then Vi settings. This setting must be as early as
 " possible, as it has side effects.
 set nocompatible
-
+execute pathogen#infect()
 " Leader
 let mapleader = " "
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
