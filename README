@@ -1,3 +1,5 @@
 This is my Vim config.
 
+cd to home directory
+clone into .vim
 '$ echo "runtime vimrc" > .vimrc ` to overwrite .vimrc

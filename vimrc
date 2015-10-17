@@ -33,6 +33,7 @@ nnoremap <space> za     "space open/closes folds
 set foldmethod=indent    "fold based on indent level
 
 "Movement
+"-->causing problems...
 "nnoremap j gj           "Move vertically by visual line
 nnoremap gV `[v`]       "highlight last inserted text
 
