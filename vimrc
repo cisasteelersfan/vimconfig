@@ -8,12 +8,13 @@ set tabstop=4           "number of visual spaces per Tab
 set softtabstop=4       "number of spaces in tab when editing
 set expandtab           "tabs are spaces
 set colorcolumn=80      "Color at column 80
+set shiftwidth=4        "Auto indent is 4 spaces to indent
 
 "UI Config
 set number         		"show line numbers
 set showcmd             "show command in bottom bar
 set cursorline          "highlight current line
-filetype indent on      "load filetype-specific ident files
+filetype indent on      "load filetype-specific indent files
 set wildmenu            "visual autocomplete for command menu
 set lazyredraw          "redraw only when we need to
 set showmatch           "highlight matching [{()}]
