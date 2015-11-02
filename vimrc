@@ -4,6 +4,8 @@
 set nocompatible        "use Vim settings rather than Vi
 colorscheme slate
 syntax enable           "enable syntax processing
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
 set tabstop=4           "number of visual spaces per Tab
 set softtabstop=4       "number of spaces in tab when editing
 set expandtab           "tabs are spaces
