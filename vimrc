@@ -2,6 +2,8 @@
 " 10/16/15
 
 set nocompatible        "use Vim settings rather than Vi
+
+filetype plugin indent on "Enable file detection
 colorscheme slate
 syntax enable           "enable syntax processing
 au BufRead,BufNewFile *.pde set filetype=arduino tabstop=4 softtabstop=4 expandtab cindent
