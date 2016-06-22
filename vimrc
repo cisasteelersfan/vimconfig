@@ -1,5 +1,6 @@
 " Colby Rome
 " 10/16/15
+" Updated 6/22/16
 
 set nocompatible        "use Vim settings rather than Vi
 
@@ -42,8 +43,10 @@ set foldmethod=indent    "fold based on indent level
 "nnoremap j gj           "Move vertically by visual line
 nnoremap gV `[v`]       "highlight last inserted text
 
-"Super saving!
-nnoremap <leader>s :mksession<CR>   "save session. Reopen with vim -S
+"Saving
+nnoremap <leader>s :mksession<CR>   "save session. Reopen with vim -S (super saving)
+cmap w!! w !sudo tee > /dev/null %   "Allow saving of files as sudo when I forget to start vim using sudo
+
 
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
