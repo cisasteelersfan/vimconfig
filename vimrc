@@ -47,6 +47,12 @@ nnoremap gV `[v`]       "highlight last inserted text
 nnoremap <leader>s :mksession<CR>   "save session. Reopen with vim -S (super saving)
 cmap w!! w !sudo tee > /dev/null %   "Allow saving of files as sudo when I forget to start vim using sudo
 
+" various settings
+set autoindent                 " Minimal automatic indenting for any filetype.
+set ruler                      " Shows the current line number at the bottom.
+                               " right of the screen.
+set wildmenu                   " Great command-line completion, use '<Tab>' to
+                               " move around and '<CR>' to validate.
 
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
